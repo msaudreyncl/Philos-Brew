@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Philos Brew | Shop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Philos<small>Brew</small></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu</button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+			      <li class="nav-item active"><a href="shop.html" class="nav-link">Shop</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item cart"><a href="#cartdeets" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>0</small></span></a></li>
+	      </div>
+		</div>
+	  </nav>
+    <!-- END nav -->
+
+    <section class="home-slider owl-carousel">
+      <div class="slider-item" style="background-image: url(images/bg_3.jpg);" data-stellar-background-ratio="0.5">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row slider-text justify-content-center align-items-center">
+            <div class="col-md-7 col-sm-12 text-center ftco-animate">
+            	<h1 class="mb-3 mt-5 bread">Shop Online</h1>
+	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Shop</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-menu mb-5 pb-5">
+      <div class="container">
+        <div class="row d-md-flex">
+          <div class="col-lg-12 ftco-animate p-md-5">
+            <div class="row">
+              <div class="col-md-12 nav-link-wrap mb-5">
+                <div class="nav ftco-animate nav-pills justify-content-center" id="v-pills-tab"  role="tablist"  aria-orientation="vertical">
+                  <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Top Picks</a>
+                  <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">The Originals</a>
+                  <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Special Recipes</a>
+                </div>
+              </div>
+              <div class="col-md-12 d-flex align-items-center">
+                <div class="tab-content ftco-animate" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+                    <div class="row">
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/americano.jpg)"></a>
+                          <div class="text">
+                            <h3>Americano</h3>
+                            <p>Espresso and Water</p><br/>
+                            <span class="price">₱125</span><br>
+                            <button onclick="addToCart('Americano', 125)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/caramelmacchiato.jpg);"></a>
+                          <div class="text">
+                            <h3>Caramel Macchiato</h3>
+                            <p>Vanilla syrup, Steamed milk, Espresso, and Caramel sauce</p>
+                            <span class="price">₱170</span><br>
+                            <button onclick="addToCart('Caramel Macchiato', 170)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/mocha.jpg)"></a>
+                          <div class="text">
+                            <h3>Mocha</h3>
+                            <p>Espresso, Chocolate, and Steamed milk</p><br/>
+                            <span class="price">₱150</span><br>
+                            <button onclick="addToCart('Mocha', 150)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/yogurtcoffee.jpg);"></a>
+                          <div class="text">
+                            <h3>Yogurt Coffee</h3>
+                            <p>Brewed coffee, Yogurt, and Condensed milk</p><br/>
+                            <span class="price">₱170</span><br>
+                            <button onclick="addToCart('Yogurt Coffee', 170)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/eiskaffee.jpg)" ></a>
+                          <div class="text">
+                            <h3>Eiskaffee</h3>
+                            <p>Brewed coffee, Vanilla ice cream, Whipped cream, Chocolate syrup, and Wafer cookie</p>
+                            <span class="price">₱190</span><br>
+                            <button onclick="addToCart('Eiskaffee', 190)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/appleicedcoffee.jpg);"></a>
+                          <div class="text">
+                            <h3>Apple Iced Coffee</h3>
+                            <p>Espresso, Apple syrup, Apple juice, and Apple slice</p>
+                            <span class="price">₱180</span><br>
+                            <button onclick="addToCart('Apple Iced Coffee', 180)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+                    <div class="row">
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/blackcoffee.jpg);"></a>
+                          <div class="text">
+                            <h3>Black Coffee</h3>
+                            <p>Just coffee</p><br/>
+                            <span class="price">₱120</span><br>
+                            <button onclick="addToCart('Black Coffee', 120)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/americano.jpg)"></a>
+                          <div class="text">
+                            <h3>Americano</h3>
+                            <p>Espresso and Water</p><br/>
+                            <span class="price">₱125</span><br>
+                            <button onclick="addToCart('Americano', 125)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/cappuccino.jpg)"></a>
+                          <div class="text">
+                            <h3>Cappuccino</h3>
+                            <p>Espresso, Steamed milk. and Foam</p><br/>
+                            <span class="price">₱130</span><br>
+                            <button onclick="addToCart('Cappuccino', 130)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/latte.jpg)"></a>
+                          <div class="text">
+                            <h3>Latte</h3>
+                            <p>Espresso and Steamed milk</p><br/>
+                            <span class="price">₱130</span><br>
+                            <button onclick="addToCart('Latte', 130)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/macchiato.jpg)"></a>
+                          <div class="text">
+                            <h3>Macchiato</h3>
+                            <p>Espresso and Foam</p><br/>
+                            <span class="price">₱150</span><br>
+                            <button onclick="addToCart('Macchiato', 150)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/caramelmacchiato.jpg);"></a>
+                          <div class="text">
+                            <h3>Caramel Macchiato</h3>
+                            <p>Vanilla syrup, Steamed milk, Espresso, and Caramel sauce</p>
+                            <span class="price">₱170</span><br>
+                            <button onclick="addToCart('Caramel Macchiato', 170)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/redeye.jpg)"></a>
+                          <div class="text">
+                            <h3>Red Eye</h3>
+                            <p>Coffee, Whiskey, Sugar, and Cream</p>
+                            <span class="price">₱190</span><br>
+                            <button onclick="addToCart('Red Eye', 190)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/mocha.jpg)"></a>
+                          <div class="text">
+                            <h3>Mocha</h3>
+                            <p>Espresso, Chocolate, and Steamed milk</p>
+                            <span class="price">₱150</span><br>
+                            <button onclick="addToCart('Mocha', 150)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/affogato.jpg)"></a>
+                          <div class="text">
+                            <h3>Affogato</h3>
+                            <p>Espresso and Ice cream</p>
+                            <span class="price">₱180</span><br>
+                            <button onclick="addToCart('Affogato', 180)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/conpanna.jpg)"></a>
+                          <div class="text">
+                            <h3>Con Panna</h3>
+                            <p>Espresso and Cream</p>
+                            <span class="price">₱110</span><br>
+                            <button onclick="addToCart('Con Panna', 110)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+                    <div class="row">
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/esalpukatkopi.jpg);"></a>
+                          <div class="text">
+                            <h3>Es Alpukat Kopi</h3>
+                            <p>Brewed coffee, Avocado, Condensed milk, Fresh milk, and Vanilla extract</p>
+                            <span class="price">₱180</span><br>
+                            <button onclick="addToCart('Es Alpukat Kopi', 180)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/yogurtcoffee.jpg);"></a>
+                          <div class="text">
+                            <h3>Yogurt Coffee</h3>
+                            <p>Brewed coffee, Yogurt, and Condensed milk</p><br/>
+                            <span class="price">₱170</span><br>
+                            <button onclick="addToCart('Yogurt Coffee', 170)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/mochacola.jpg)"></a>
+                          <div class="text">
+                            <h3>Mocha Cola</h3>
+                            <p>Brewed coffee, Cola, Chocolate milk, and Whipped cream</p>
+                            <span class="price">₱180</span><br>
+                            <button onclick="addToCart('Mocha Cola', 180)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/eiskaffee.jpg)"></a>
+                          <div class="text">
+                            <h3>Eiskaffee</h3>
+                            <p>Brewed coffee, Vanilla ice cream, Whipped cream, Chocolate syrup, and Wafer cookie</p>
+                            <span class="price">₱190</span><br>
+                            <button onclick="addToCart('Eiskaffee', 180)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/kaffelemonad.jpg);"></a>
+                          <div class="text">
+                            <h3>Kaffelemonad</h3>
+                            <p>Brewed coffee, Lemon juice, and Sugar syrup</p>
+                            <span class="price">₱170</span><br>
+                            <button onclick="addToCart('Kaffelemonad', 170)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/appleicedcoffee.jpg);"></a>
+                          <div class="text">
+                            <h3>Apple Iced Coffee</h3>
+                            <p>Espresso, Apple syrup, Apple juice, and Apple slice</p>
+                            <span class="price">₱180</span><br>
+                            <button onclick="addToCart('Apple Iced Coffee', 180)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <div class="menu-wrap">
+                          <a href="#" class="menu-img img mb-4" style="background-image: url(images/minticedcoffee.jpg);"></a>
+                          <div class="text">
+                            <h3>Mint Iced Coffee</h3>
+                            <p>Espresso, Fresh mint leaves, Condensed milk, Sugar, Vanilla bean</p>
+                            <span class="price"> ₱180</span><br>
+                            <button onclick="addToCart('Mint  Iced Coffee', 180)" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-cart" id="cartdeets">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section ftco-animate text-center">
+            <span class="subheading">Cart</span>
+            <h2 class="mb-4">Details</h2>
+          </div>
+        </div>
+        <div class="row">
+        <div class="col-md-12 ftco-animate">
+          <div class="cart-list" id="cart-items-container">
+          <table class="table" id="cart-table">
+            <thead class="thead-primary">
+            <tr class="text-center">
+              <th>&nbsp;</th>
+              <th>&nbsp;</th>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+            </thead>
+            <tbody id="cart-table-body">
+                    <tr class="text-center">
+                      <td class="product-remove"><a href="#"><span class="icon-close"></span></a></td>
+                      
+                      <td class="image-prod"><div class="img" style="background-image:url(images/blackcoffee.jpg);"></div></td>
+                      
+                      <td class="product-name"><h3>Black Coffee</h3></td>
+                      
+                      <td class="price">₱0</td>
+                      
+                      <td class="quantity">0</td>
+                      
+                      <td class="total">₱0</td>
+                    </tr><!-- END TR-->
+            </tbody>
+          </table>
+        </div>
+        </div>
+      </div>
+        <div class="row justify-content-end">
+          <div class="col col-lg-3 col-md-6 mt-5 cart-wrap ftco-animate">
+            <div class="cart-total mb-3">
+              <h3>Cart Total</h3>
+              <p class="d-flex">
+                <span>Subtotal</span>
+                <span id="subtotal">₱0</span>
+              </p>
+              <p class="d-flex">
+                <span>Delivery</span>
+                <span>₱10</span>
+              </p>
+              <hr>
+              <p class="d-flex total-price">
+                <span>Overall Total</span>
+                <span id="total">₱0</span>
+              </p>
+            </div>
+            <p class="text-center"><a href="checkout.html" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
+          </div>
+        </div>
+        </div>
+      </section>
+
+    <footer class="ftco-footer ftco-section img">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row mb-5">
+        <div class="col-lg-4 col-md-6 mb-5 mb-md-5">
+          <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">Recent Blog</h2>
+          <div class="block-21 mb-3 d-flex">
+            <a href="blog.html" class="blog-img mr-4" style="background-image: url('images/blog5.jpg');"></a>
+            <div class="text">
+            <h3 class="heading"><a href="blog.html">Sipping on the rich warmth of Cafézinho, probably my all-...</a></h3>
+            <div class="meta">
+              <div><a href="blog.html"><span class="icon-calendar"></span> June 28, 2019</a></div>
+              <div><a href="blog.html"><span class="icon-chat"></span> 54</a></div>
+            </div>
+            </div>
+          </div>
+          <div class="block-21 mb-4 d-flex">
+            <a href="blog.html" class="blog-img mr-4" style="background-image: url('images/blog6.jpg');"></a>
+            <div class="text">
+            <h3 class="heading"><a href="blog.html">Doubling the delight with a steaming pot of Café de...</a></h3>
+            <div class="meta">
+              <div><a href="blog.html"><span class="icon-calendar"></span> March 2, 2021</a></div>
+              <div><a href="blog.html"><span class="icon-chat"></span> 77</a></div>
+            </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-5">
+          <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">Have a Questions?</h2>
+          <div class="block-23 mb-3">
+            <ul>
+            <li><span class="icon icon-map-marker"></span><span class="text">Teresa Street, Santa Mesa, Manila, Metro Manila</span></li>
+            <li><a href="#"><span class="icon icon-phone"></span><span class="text">+639987654321 |<br>+639123456789</span></a></li>
+            <li><a href="#"><span class="icon icon-envelope"></span><span class="text">inquiries@philos.com</span></a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-5">
+          <div class="ftco-footer-widget mb-4">
+          <h2 class="ftco-heading-2">Follow us on:</h2>
+          <ul class="ftco-footer-social list-unstyled float-md-left">
+            <li class="ftco-animate"><a href="https://www.facebook.com/audrey.nicole.94009"><span class="icon-facebook"></span></a></li>
+            <li class="ftco-animate"><a href="https://www.instagram.com/msaudreyncl/"><span class="icon-instagram"></span></a></li>
+            <li class="ftco-animate"><a href="https://twitter.com/blackpink?lang=en"><span class="icon-twitter"></span></a></li>
+          </ul>
+          </div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-12 text-center">
+          <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        </div>
+        </div>
+      </div>
+      </footer>
+  
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+
+<!-- Add this script to the end of your HTML body -->
+<script>
+  let cartItems = [];
+
+  function addToCart(productName, price) {
+    // Check if the item is already in the cart
+    const existingItemIndex = cartItems.findIndex(item => item.name === productName);
+
+    if (existingItemIndex !== -1) {
+      // Update quantity if the item is already in the cart
+      cartItems[existingItemIndex].quantity++;
+    } else {
+      // Add the item to the cart
+      cartItems.push({ name: productName, price: price, quantity: 1 });
+    }
+
+    updateCartIcon();
+    updateCartTable();
+  }
+
+  function removeFromCart(index) {
+    // Remove the item from the cart based on the index
+    cartItems.splice(index, 1);
+    updateCartIcon();
+    updateCartTable();
+  }
+
+  function updateCartIcon() {
+    // Update the cart icon with the total quantity
+    const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
+    document.querySelector('.bag small').textContent = totalQuantity;
+  }
+
+  function updateCartTable() {
+    // Update the cart table with the current items in the cart
+    const cartTableBody = document.getElementById('cart-table-body');
+    let cartTableHTML = '';
+
+    let subtotal = 0;
+
+    cartItems.forEach((item, index) => {
+      const totalItemPrice = item.price * item.quantity;
+      subtotal += totalItemPrice;
+
+      cartTableHTML += `
+        <tr class="text-center">
+          <td class="product-remove">
+            <a href="#" onclick="removeFromCart(${index})"><span class="icon-close"></span></a>
+          </td>
+          <td class="image-prod">
+            <div class="img" style="background-image:url(images/${item.name.toLowerCase().replace(/\s/g, '')}.jpg);"></div>
+          </td>
+          <td class="product-name"><h3>${item.name}</h3></td>
+          <td class="price">₱${item.price}</td>
+          <td class="quantity">${item.quantity}</td>
+          <td class="total">₱${totalItemPrice}</td>
+        </tr>`;
+    });
+
+    // Update the cart table body
+    cartTableBody.innerHTML = cartTableHTML;
+
+    // Update subtotal and overall total
+    const deliveryFee = 10;
+    const overallTotal = subtotal + deliveryFee;
+
+    document.getElementById('subtotal').textContent = `₱${subtotal}`;
+    document.getElementById('total').textContent = `₱${overallTotal}`;
+
+    // Prevent the page from scrolling to the top when adding/removing items
+    window.scrollTo(0, document.body.scrollTop || document.documentElement.scrollTop);
+  }
+  
+</script>
+
+
+  </body>
+</html>
