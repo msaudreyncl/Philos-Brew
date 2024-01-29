@@ -461,6 +461,8 @@
         </div>
         <div class="col-lg-3 col-md-6 mb-5 mb-md-5">
           <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Store Hours:</h2>
+            <p>Mon - Sat | 8:00 AM to 9:00 PM</p>
           <h2 class="ftco-heading-2">Follow us on:</h2>
           <ul class="ftco-footer-social list-unstyled float-md-left">
             <li class="ftco-animate"><a href="https://www.facebook.com/audrey.nicole.94009"><span class="icon-facebook"></span></a></li>
@@ -501,19 +503,15 @@
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
 
-<!-- Add this script to the end of your HTML body -->
 <script>
   let cartItems = [];
 
   function addToCart(productName, price) {
-    // Check if the item is already in the cart
     const existingItemIndex = cartItems.findIndex(item => item.name === productName);
 
     if (existingItemIndex !== -1) {
-      // Update quantity if the item is already in the cart
       cartItems[existingItemIndex].quantity++;
     } else {
-      // Add the item to the cart
       cartItems.push({ name: productName, price: price, quantity: 1 });
     }
 
@@ -522,20 +520,17 @@
   }
 
   function removeFromCart(index) {
-    // Remove the item from the cart based on the index
     cartItems.splice(index, 1);
     updateCartIcon();
     updateCartTable();
   }
 
   function updateCartIcon() {
-    // Update the cart icon with the total quantity
     const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
     document.querySelector('.bag small').textContent = totalQuantity;
   }
 
   function updateCartTable() {
-    // Update the cart table with the current items in the cart
     const cartTableBody = document.getElementById('cart-table-body');
     let cartTableHTML = '';
 
@@ -560,17 +555,14 @@
         </tr>`;
     });
 
-    // Update the cart table body
     cartTableBody.innerHTML = cartTableHTML;
 
-    // Update subtotal and overall total
     const deliveryFee = 10;
     const overallTotal = subtotal + deliveryFee;
 
     document.getElementById('subtotal').textContent = `₱${subtotal}`;
     document.getElementById('total').textContent = `₱${overallTotal}`;
 
-    // Prevent the page from scrolling to the top when adding/removing items
     window.scrollTo(0, document.body.scrollTop || document.documentElement.scrollTop);
   }
   
